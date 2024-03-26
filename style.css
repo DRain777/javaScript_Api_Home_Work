@@ -1,0 +1,51 @@
+.title {
+    display: flex;
+    justify-content: center;
+    /* Выравниваем содержимое по центру по горизонтали */
+    text-align: center;
+    /* Выравниваем текст по центру внутри блока */
+}
+
+img  {
+    border-radius: 5%;
+}
+
+.like-button {
+    border-radius: 10%;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.image-container img {
+    width: 100%; /* адаптивная ширина*/
+    height: auto;
+    max-width: 300px;
+    cursor: pointer;
+    border: 2px solid transparent;/* рамочка к нашему img*/
+}
+
+.image-container img.liked {
+    border-color: rgb(0, 225, 229) ;/* меняем цвет рамки при лайке*/
+}
+
+.photographer {
+    font-weight: bold;
+}
+
+
+.like-button {
+    background-color: lightgrey;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.like-button.liked {
+    background-color: rgb(0, 225, 229);/* меняем цвет кнопки при лайке*/
+}
+
